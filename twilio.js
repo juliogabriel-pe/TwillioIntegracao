@@ -46,7 +46,7 @@ app.post('/webhook', (req, res) => {
                     client.messages.create({
                         body: 'Numero ja cadastrado',
                         to: `${fromNumberCopy}`,  // Número do destinatário
-                        from: '+1(415)523-8886' // Seu número na Twilio
+                        from: 'seu numero' // Seu número na Twilio
                     })
                     .then((message) => console.log(message.sid))
                     .catch((error) => console.error(error));
