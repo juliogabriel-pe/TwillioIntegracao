@@ -4,8 +4,8 @@ const fs = require('fs');
 const db = require('./db');
 const saveUser = require('./saveUser');
 const twilio = require('twilio');
-const accountSid = 'AC0202e7a70e05d86934f3924ab0888458'; // Seu Account SID da Twilio
-const authToken = 'd854603a294c87444311db40e850b8f9';   // Seu Auth Token da Twilio
+const accountSid = 'your_twilio_account_sid';
+const authToken = 'your_twilio_auth_token';
 
 const client = new twilio(accountSid, authToken);
 
